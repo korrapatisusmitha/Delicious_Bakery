@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Delicious Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="header">
+    <div id="logo">Delicious Bakery</div>
+    <div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<!--Home-->
+    <section id="home">
+        <div class="home-container">
+            <img class="home-img" src="./images/home img.jpg" alt="home image">
+             <div class="center">
+                <h1>Welcome to delicious bakery</h1>
+                <p>
+                    "Indulge in the sweetness of moments with Bakery Delicious, where every bite is a journey into joy and flavor."
+                </p>
+                    <a class="btn" href="#">order</a>
+                </div>
+        </div>
+    </section>
+<!--menu-->
+<section id="menu">
+    <h2>Our menu</h2>
+    <div class="category" id="cookies">
+            <img src="./images/cookies.jpeg" alt="Cookies" class="category-img">
+        <div class="menu-dropdown">
+            <!--Cookies-->
+            <div class="menu-item">
+                <h3>Chewy Chocolate Chip Cookies</h3>
+                <p class="description">Irresistible chewy chocolate chip cookies.</p>
+                <p class="price">$2.50</p>
+                <h3>Oatmeal Cookies</h3>
+                <p class="description">Delicious oatmeal cookies with a hint of cinnamon.</p>
+                <p class="price">$2.50</p>
+                <h3>Peanut Butter Banana Chocolate Cookies</h3>
+                <p class="description">A delightful blend of peanut butter, banana, and chocolate.</p>
+                <p class="price">$2.50</p>
+                <h3>Walnut Brownie Cookies</h3>
+                <p class="description">Rich and fudgy brownie cookies with walnuts.</p>
+                <p class="price">$2.50</p>
+            </div>
+        </div>
+    </div>
+    <!--croissant-->
+    <div class="category" id="croissants">
+            <img src="./images/croissants.jpeg" alt="Croissants" class="category-img" onclick="toggleMenu('croissants')">
+        <div class="menu-dropdown" id="croissants-menu">
+            <div class="menu-item">
+                <h3>Plain Croissant</h3>
+                <p class="description">Classic and buttery plain croissant.</p>
+                <p class="price">$4.00</p>
+                <h3>Almond Salted Caramel Croissant</h3>
+                <p class="description">Flaky croissant filled with almond and salted caramel.</p>
+                <p class="price">$4.00</p>
+                <h3>White Chocolate Espressolised Croissant</h3>
+                <p class="description">Croissant infused with white chocolate and espresso.</p>
+                <p class="price">$4.00</p>
+                <h3>Matcha Croissant</h3>
+                <p class="description">Croissant with a delightful matcha flavor.</p>
+                <p class="price">$4.00</p>
+            </div>
+        </div>
+    </div>
+    <!--cupcakes-->
+    <div class="category" id="cupcakes">
+            <img src="./images/cupcake.jpeg" alt="Cupcakes" class="category-img" onclick="toggleMenu('cupcakes')">
+        <div class="menu-dropdown" id="cupcakes-menu">
+            <div class="menu-item">
+                <h3>Vanilla Cupcake</h3>
+                <p class="description">Delicious vanilla cupcake with creamy frosting.</p>
+                <p class="price">$3.50</p>
+                <h3>Matcha Raspberry Cruffin</h3>
+                <p class="description">Cruffin filled with matcha and raspberry goodness.</p>
+                <p class="price">$4.00</p>
+                <h3>Cinnamon & Brown Sugar Cruffin</h3>
+                <p class="description">Cruffin with a perfect blend of cinnamon and brown sugar.</p>
+                <p class="price">$4.00</p>
+                <h3>Lemon Pie Cruffin</h3>
+                <p class="description">Cruffin with a zesty lemon pie filling.</p>
+                <p class="price">$4.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--about us-->
+<section id="about-us">
+    <div class="about-us-content">
+        <h2>About Us</h2>
+        <p>Welcome to Delicious Bakery, where our passion is crafting mouthwatering treats that delight your taste buds. We take pride in using only the finest ingredients to create a delectable assortment of cookies, croissants, and cupcakes.</p>
+        <p>At Delicious Bakery, we believe in the art of baking. Each creation is a masterpiece, baked with love and care to bring joy to every customer. Our commitment to quality and taste sets us apart, making us your go-to destination for irresistible baked goods.</p>
+
+        <h3>Our Mission</h3>
+        <p>Our mission is to create exceptional baked goods that not only satisfy your cravings but also create memorable moments. We aim to be the preferred choice for those who appreciate the perfect balance of flavors and a touch of sweetness in their lives.</p>
+
+        <h3>Meet Our Team</h3>
+        <p>We are a team of dedicated bakers and pastry enthusiasts who share a common goal – to bring smiles to our customers' faces through the joy of delicious treats. Get to know the talented individuals who make Delicious Bakery a reality.</p>
+        <p>Thank you for choosing Delicious Bakery. We look forward to serving you and making every bite a delightful experience.</p>
+    </div>
+</section>
+<!--contact-->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Timings:</strong> Monday - Saturday, 8:00 AM - 7:00 PM</p>
+        <p><strong>Address:</strong> 123 Bakery Street, Cityville</p>
+        
+        <div id="social-icons">
+            <a href="#" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./images/instagram.jpeg" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./images/x twitter.png" alt="X"></a>
+        </div>
+        <div id="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.541075634282!2d-0.16015462412190834!3d51.521635009664216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acec0d50469%3A0xefde890f4e494618!2s123%20Baker%20St%2C%20London%20W1U%206RZ%2C%20UK!5e0!3m2!1sen!2sin!4v1702363252459!5m2!1sen!2sin" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="questions-link"><a href="mailto:info@deliciousbakery.com">Have any questions? Email us!</a></p>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 Delicious Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
