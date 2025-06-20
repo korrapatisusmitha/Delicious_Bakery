@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Add the chatbot script -->
+<script src="http://localhost:3000/chatbot.js" defer></script>
+
+<!-- Initialize the chatbot -->
+<script defer>
+    window.addEventListener('load', function() {
+        // Initialize the chatbot with your configuration
+        const chatbot = new ChatbotService({
+            clientId: 'e1b712ed-8b6a-4e5e-8288-92e26069dfe5',
+            widgetId: 'widget_31db9885-4461-4028-8ead-1ff04eb4b4ec',
+            apiUrl: 'http://localhost:3000/api/v1',
+            position: "bottom-right",
+            theme: {
+              primaryColor: "#ade70d",
+              textColor: "#000000",
+              backgroundColor: "#ebede8"
+            },
+            botName: "cookiee Assistant",
+            welcomeMessage: "Anneyong Sweet tooths! How can I help you ?"
+        });
+    });
+</script>
 <nav id="header">
     <div id="logo">Delicious Bakery</div>
     <div>
